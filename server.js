@@ -29,33 +29,33 @@ const db = knex({
 
 const app = express(); 
 
-const database = {
-    users: [
-        {
-            id: '123',
-            name: 'Robert',
-            email: 'robert@yahoo.com',
-            password: 'cookies',
-            entries: 0,
-            joined: new Date()
-        },
-        {
-            id: '124',
-            name: 'Dexter',
-            email: 'dexter@yahoo.com',
-            password: 'apples',
-            entries: 0,
-            joined: new Date()
-        },
-    ],
-    // login: [
-    //     {
-    //         id: '987',
-    //         hash: '',
-    //         email: 'robert@yahoo.com'
-    //     }
-    // ]
-}
+// const database = {
+//     users: [
+//         {
+//             id: '123',
+//             name: 'Robert',
+//             email: 'robert@yahoo.com',
+//             password: 'cookies',
+//             entries: 0,
+//             joined: new Date()
+//         },
+//         {
+//             id: '124',
+//             name: 'Dexter',
+//             email: 'dexter@yahoo.com',
+//             password: 'apples',
+//             entries: 0,
+//             joined: new Date()
+//         },
+//     ],
+//     // login: [
+//     //     {
+//     //         id: '987',
+//     //         hash: '',
+//     //         email: 'robert@yahoo.com'
+//     //     }
+//     // ]
+// }
 
 //bodyParser is a middleware- add this after the above app = express() code has been created
 app.use(bodyParser.json());
