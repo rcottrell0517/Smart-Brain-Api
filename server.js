@@ -63,7 +63,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // simple routes
-app.get('/', (req, res) => { res.send(database.users)})
+// caused errors with heroku because not using the database above
+// app.get('/', (req, res) => { res.send(database.users)})
+
+app.get('/', (req, res) => { res.send('it is working')})
     
 // Depedency injection performed 
 app.post('/signin', (req, res) => {signin.handleSignin(req, res, db, bcrypt) })
