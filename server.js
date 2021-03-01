@@ -25,8 +25,11 @@ const image = require('./controllers/image');
     connection: {
     // this address is the same as localhost
       connectionString : process.env.DATABASE_URL, 
-      ssl: true,
-      // rejectUnauthorized: false,
+      // ssl: true,
+      ssl: {
+        rejectUnauthorized: false,
+      }
+      
     }
   });
 
