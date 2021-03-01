@@ -24,7 +24,7 @@ const image = require('./controllers/image');
     client: 'pg',
     connection: {
     // this address is the same as localhost
-      connectionString: process.env.DATABASE_URL, 
+      connectionString : process.env.DATABASE_URL, 
       ssl: true,
       // rejectUnauthorized: false,
     }
